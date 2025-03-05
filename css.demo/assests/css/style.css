@@ -19,6 +19,12 @@ background-color:azure;
   margin:auto;
 }
 
+/* ------------------------------- Responsive Images ------------------ */
+
+img{
+  max-width:100%;
+}
+
 body {
     font-family: "Kanit", serif;
     font-weight: 600;
@@ -70,7 +76,7 @@ margin: 20px 0 0;
     padding:0;
     display:flex;
     flex-direction:row;
-    justify-content:space-evenly
+    justify-content:space-evenly;
     max-width:960px;
     margin:auto;
   }
@@ -79,20 +85,23 @@ margin: 20px 0 0;
   }
   nav.primary Ul li a{
     color:burlywood;
+    font-size:0.6rem;
     text-decoration:none;
     border: 1px dotted #E60200;
-    padding: 9px 18px;
+    padding: 6px 12px;
     background-color: aquamarine;
-    background-color:rgba(0,0,0,.5)
-    border-radius: 2px;
-    transition: 4px;
+    background-color:rgba(0,0,0,.5);
+    border-radius: 20px;
+    transition: 0.4px;
   }
 
   nav.primary Ul li a hover {
     background-color: rgba(0,0,0,.7);
   }
 
-  #content{}
+  #content{
+
+  }
 
 #content h2{
   color: #3b638b;
@@ -101,11 +110,69 @@ margin: 20px 0 0;
 
 #content h3{
   color:bisque;
-  border-left: 7.5px dashed #E60200
+  border-left: 7.5px dashed #E60200;
   padding: 6px 0 7px 12px;
 }
+  /* padding: 6px 0 7px 12px; */
 
-media screen and (max-width:900px){
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:30px;
+  border-top:1px dashed #4b3a26;
+  padding-top:30px;
+}
+
+#blog article.post{
+  box-shadow:0 4px 8px rgba(0,0,0,.9);
+  padding:12px;
+  font-size:0.9rem;
+  border-radius:6px;
+}
+
+figure{
+  margin:0;
+}
+
+figcaption, time{
+text-transform:uppercase;
+font-size: 0.6rem;
+text-align:left;
+color:#ff5b00;
+}
+
+#blog article.post a{
+color:#770389;
+}
+
+
+aside[role="complementary"]{
+  background-color:#341539;
+  color:#E60200;
+  padding:30px 0;
+  flex-direction:column;
+}
+
+aside .container{
+  display:flex;
+  flex-direction:row;
+  gap:40px;
+}
+
+aside .container a{
+  color: #fff;
+  display:block;
+  text-align:right;
+}
+
+aside article footer {
+  display:none;
+}
+  
+
+@media screen and (max-width:900px){
   nav.primary ul{
     flex-direction:column;
     gap:10px;
