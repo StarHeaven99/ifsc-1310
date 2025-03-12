@@ -160,8 +160,40 @@ tr:hover{
   padding:5px;
   }
 
+#practice ol{
+  list-style-type:lower-alpha;
+}
+
+#practice ul ul li{
+list-style-type:square;
+}
+
+#practice dl dd{
+  margin:0;
+}
+
+#practice dl dt{
+font-weight:bold;
+}
+
+dd + dt{
+  margin-top:20px;
+}
 
 
+#practice blockquote{
+  border: 3px double #000000;
+  padding: 15px 30px;
+  margin:30px 60px;
+  border-radius:25px 0px;
+}
+
+#practice blockquote cite{
+display:block;
+text-align:right;
+font-size:0.5;
+margin-top:1rem;
+}
 
   #content{
 
